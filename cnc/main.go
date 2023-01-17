@@ -9,14 +9,14 @@ import (
 
 const DatabaseAddr string   = "127.0.0.1:3306"
 const DatabaseUser string   = "root"
-const DatabasePass string   = "YOURMYSQLPASSWORD"
+const DatabasePass string   = "(a(a9(9(a"
 const DatabaseTable string  = "cosmic"
 
 var clientList *ClientList = NewClientList()
 var database *Database = NewDatabase(DatabaseAddr, DatabaseUser, DatabasePass, DatabaseTable)
 
 func main() {
-    tel, err := net.Listen("tcp", "0.0.0.0:1312")
+    tel, err := net.Listen("tcp", "146.190.156.74:1312")
     if err != nil {
         fmt.Println(err)
         return
